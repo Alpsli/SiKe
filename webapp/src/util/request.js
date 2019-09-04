@@ -13,8 +13,6 @@ export default function request(url, options) {
 
     /**
      * 注意:
-     * 通过https://vpn.iqiyi.com访问本系统时，由于vpn做了特殊的转发，url形如https://vpn.iqiyi.com/,DanaInfo=bi.qiyi.domain,SSO=U+#/，
-     * 此时url如果是"/api/common/init"这种相对路径，最终发出的会变成错误的值，例如https://vpn.iqiyi.com/api/common/init?
      * 所以需要手动重写url的值
      */
     /* if (url.indexOf('http') === -1) {
